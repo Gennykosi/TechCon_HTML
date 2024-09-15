@@ -2,57 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact Us - TechCon 2024</title>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
         <h1>Contact Us</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="register.html">Register</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Main Content Section -->
     <main>
+        <!-- Contact Information -->
         <section>
             <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:contact@techcon2024.com">contact@techcon2024.com</a></p>
-
-            <h3>Follow Us</h3>
-            <p>
-                <a href="https://facebook.com/techcon2024" target="_blank">Facebook</a> |
-                <a href="https://twitter.com/techcon2024" target="_blank">Twitter</a> |
-                <a href="https://linkedin.com/company/techcon2024" target="_blank">LinkedIn</a>
-            </p>
-
-            <h3>Conference Venue Location</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094746!2d144.95565121531677!3d-37.81720997975198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43b14f31d1%3A0x2b1a1b234eefdee5!2sConference%20Venue!5e0!3m2!1sen!2sus!4v1649503178467!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
         </section>
 
+        <!-- Embedded Google Map -->
         <section>
-            <h2>Our contact form</h2>
-            <form action="#" method="post">
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                <label for="name">Full Name:</label>
+            <h2>Venue Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093707!2d144.9559283155045!3d-37.817209742013295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577cc34f7b8d55!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1618886541247!5m2!1sen!2sau"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <label for="email">Email Address:</label>
+        <!-- Contact Us Form -->
+        <section>
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                <label for="message">Your Message:</label>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
-    <footer><p>&copy; 2024 TechCon. All rights reserved.</p></footer>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
